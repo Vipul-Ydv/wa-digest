@@ -1,0 +1,15 @@
+# Sensitive — NEVER commit these.
+# auth_info holds your WhatsApp linked-device session keys.
+# Anyone with these files can read and send messages as you.
+auth_info/
+.env
+
+# Logs (may contain message content if you enable debug logging)
+*.log
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store

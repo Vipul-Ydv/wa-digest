@@ -1,0 +1,33 @@
+{
+  "name": "wa-digest",
+  "version": "0.3.0",
+  "description": "Privacy-first, self-hosted WhatsApp catch-up summarizer. Links as a WhatsApp device, buffers messages in memory only, and uses Claude to digest what you missed while away — summarize-then-discard, nothing stored to disk.",
+  "type": "module",
+  "bin": {
+    "wa-digest": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "whatsapp",
+    "summarizer",
+    "baileys",
+    "claude",
+    "anthropic",
+    "llm",
+    "self-hosted",
+    "privacy"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@whiskeysockets/baileys": "^7.0.0-rc13",
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
